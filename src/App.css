@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: #f6f5e9;
+  overflow-x: hidden;
+}
+.sidepat {
+  background-image: url("./SVG/side.svg");
+  background-size: 30px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  /* background-attachment: fixed; */
+  background-repeat: repeat-y;
+  background-position: right;
+}
+/* .app {
+  border-image: url("./SVG/side.svg") 30;
+} */
