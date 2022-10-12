@@ -7,11 +7,7 @@ import Info from "./Info";
 
 export default function Contact() {
   return (
-    <div
-      id="contacts "
-      className="relative top-[20%]"
-      style={{ backgroundColor: "#FFF5E4" }}
-    >
+    <div id="contacts " className="relative top-[20%] ">
       <FloatingText />
       <Info />
       <Buttons />

@@ -4,7 +4,8 @@ import Whatca from "./Whatca";
 
 function Main1() {
   return (
-    <div className="w-[100%]">
+    <div className="w-[100%] relative">
+      {/* <div className="sidepat absolute hidden sm:block top-0 right-2 w-[5%] h-screen "></div> */}
       <div className="flex flex-col items-center p-5 sm:items-start">
         <div className="text-3xl font-bold text-[#F74061]">Hello!</div>
         <div>5 Februry</div>
@@ -16,7 +17,12 @@ function Main1() {
           src={back}
           alt=""
         />
-        <div className="flex flex-col py-5 justify-center items-center relative sm:top-[4rem]">
+        <div
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="flex flex-col py-5 justify-center items-center relative sm:top-[4rem]"
+        >
           <h1 className="text-2xl text-white sm:text-3xl xl:text-5xl whitespace-nowrap">
             Become A Campus Ambassador
           </h1>
