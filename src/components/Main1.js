@@ -1,6 +1,7 @@
 import React from "react";
 import back from "../SVG/back.svg";
 import Whatca from "./Whatca";
+import { Link } from "react-router-dom";
 
 function Main1() {
   return (
@@ -27,7 +28,7 @@ function Main1() {
             Become A Campus Ambassador
           </h1>
           <button className="text-[#F74061] p-1 sm:p-3 sm:text-xl text-lg   md:text-3xl w-40 sm:w-64 font-semibold bg-white rounded-lg mt-5 sm:mt-10">
-            Apply
+            <Link to={'/ambassador-apply'}>Apply</Link>
           </button>
         </div>
       </div>
