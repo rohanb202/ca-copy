@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import kashilogo from "../SVG/kashiyatra.svg";
+
 function Sidebar() {
   return (
     <div className="bg-[#098770] fixed top-0 w-[15%] h-screen hidden lg:block">
@@ -8,7 +10,7 @@ function Sidebar() {
       </div>
       <div className="flex flex-col justify-center p-10 mt-10 space-y-5 font-semibold text-white align-center">
         <div>Dashboard</div>
-        <div>Profile</div>
+        <div><Link to={'/profile'}>Profile</Link></div>
         <div>Event Regstration</div>
         <div>Ambassador</div>
       </div>

@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Profile from './Pages/Profile/Profile';
+import AmbassadorApplyForm from './Pages/Ambassodor/Application/ApplicationForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<App />} />
+        <Route path='/ambassador-apply' element={<AmbassadorApplyForm />} />
+        <Route path='/profile' element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
